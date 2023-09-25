@@ -1,0 +1,663 @@
+/* ==UserStyle==
+@name           WIKAMP
+@namespace      github.com/NotSirius-A
+@version        1.4.0
+@description    Nowy styl dla nowego wikampa
+@author         NotSirius-A
+==/UserStyle== */
+
+@-moz-document domain("edu.p.lodz.pl") {
+    :root {
+        --primary-background: #131313;
+        --secondary-background: #191919;
+        --highlight: #1f1f1f;
+        --theme-color: #65081a;
+        --login-button-font-color: #ccc;
+    }
+
+
+
+    /*     Global       */
+
+    
+    .wikamp-header {
+       background: linear-gradient(275deg, #252525 0%,var(--secondary-background) 70%) !important;
+    }
+ 
+    body .wikamp-header.fixed-top .wikamp-header-title-wrapper .site-name {
+        color: var(--login-button-font-color);
+    }
+    
+    #wikamp-banner {
+        filter: brightness(70%) !important;
+    }
+    
+    #wikamp-banner div {
+         background-color: var(--secondary-background) !important;
+    }
+    
+    body .wikamp-header.fixed-top {
+        border-bottom: 3px solid var(--theme-color) !important;
+    }
+    
+    #page-footer *{
+        filter: brightness(0.9) !important;
+        color: #9f9f9f !important;
+    }
+    
+    .text-primary {
+        color: var(--theme-color) !important;
+    }
+
+    .wikamp-scroller, body.sitecolor-dark .wikamp-scroller, body.sitecolor-dark .drawer .drawercontent, body .wikamp-scroller {
+        scrollbar-color: var(--theme-color) #2f2f2f !important;
+        scrollbar-width: auto;
+    }
+    
+    ::-webkit-scrollbar, .drawercontent::-webkit-scrollbar, .visual-scroll-x::-webkit-scrollbar, #page.drawers::-webkit-scrollbar, .reportbuilder-filters-sidebar::-webkit-scrollbar , .reportbuilder-sidebar-menu-cards::-webkit-scrollbar, #page::-webkit-scrollbar {
+        width: 4px !important;
+    }
+    
+    ::-webkit-scrollbar-track, .drawercontent::-webkit-scrollbar-track, .visual-scroll-x::-webkit-scrollbar-track, #page.drawers::-webkit-scrollbar-track, .reportbuilder-filters-sidebar::-webkit-scrollbar-track , .reportbuilder-sidebar-menu-cards::-webkit-scrollbar-track, #page::-webkit-scrollbar-track {
+        border-radius: 10px !important;
+        background-color: var(--secondary-background) !important;
+    }
+
+    ::-webkit-scrollbar-thumb, .drawercontent::-webkit-scrollbar-thumb, .visual-scroll-x::-webkit-scrollbar-thumb, #page.drawers::-webkit-scrollbar-thumb, .reportbuilder-filters-sidebar::-webkit-scrollbar-thumb , .reportbuilder-sidebar-menu-cards::-webkit-scrollbar-thumb, #page::-webkit-scrollbar-thumb {
+        border-radius: 10px !important;
+        background: var(--theme-color) !important;
+        border:none !important;
+        border-right:none !important;
+        box-shadow: none !important;
+    }
+    
+    .sitecolor-dark .list-group-item.active {
+        background-color: var(--theme-color) !important;
+    }
+
+    hr {
+        border-top-color: var(--theme-color) !important;
+    }
+    
+    /*     Logged-out homepage */
+
+    #page-site-index, .region-main-box, .navbar-cover, #page-content, #page,  #page-footer {
+        background-color: var(--primary-background) !important;
+    }
+
+    body {
+        background-color: var(--secondary-background) !important;
+    }
+
+    #region-main, .page-header-wrapper > .card {
+        background-color: var(--secondary-background) !important;
+        border: solid 1px var(--highlight);
+    }
+
+    .btn {
+        background-color: var(--highlight);
+        border: solid 1px var(--highlight);
+
+    }
+
+    body .wikamp-header .btn .fa-bars, body .wikamp-header .btn .fa-angle-double-left, body .wikamp-header .btn .fa-angle-double-right {
+        color: white !important;
+    }
+
+    body .marketing-blocks-wrapper .marketing-block .card-img-top-wrapper, body .marketing-blocks-wrapper .marketing-block .card .card-img-top {
+        filter: brightness(0.6);
+    }
+
+    body .marketing-blocks-wrapper .marketing-block .card{
+        height: 12em;
+    }
+
+    body .marketing-blocks-wrapper .marketing-block .card .card-body a {
+        color: var(--login-button-font-color) !important;
+    }
+
+
+    body .wikamp-header .navbar-nav a, body .wikamp-header .navbar-nav span, body .wikamp-header .navbar-nav i {
+/*         color: var(--theme-color); */
+        font-size: 1.05rem !important;
+        color: var(--login-button-font-color) !important;
+
+    }
+
+/*     body .wikamp-header .navbar-nav {
+        filter: brightness(1.7) !important;
+    }
+ */
+    .usermenu .login > a {
+        color: var(--login-button-font-color) !important;
+        font-size: 1.05rem !important;
+    }
+
+    #page-site-index .border-right {
+        border-right: none !important;
+    }
+
+    
+    /* Pre login page */
+    
+
+    #login-page, #region-main, #page-site-index, #page-login-index {
+        background-color: var(--primary-background) !important;
+        background-image: none !important;
+    }
+
+    #wikamp-rules, #login-page .card {
+        background-color: transparent;
+        color: var(--login-button-font-color);
+        margin: 6vh !important;
+        font-size: 1rem;
+        border: none;
+    }
+
+    #wikamp-rules, #wikamp-rules *, .nav-curr-lang {
+        display: none;
+    }
+
+
+    #page-site-index #page-footer, #page-login-index #page-footer{
+        font-size: 0.85rem;
+    }
+
+    #login-page > div {
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        box-shadow: 0px 0px 5px 4px rgba(255,255,255,0.12);
+        border-radius: 0.17em;
+    }
+
+    #wikamp-rules, #login-page .card {
+        padding: 4em 2em 4em 2em !important;
+        margin: 0 !important;
+    }
+
+    #login img, #guestlogin img{
+        filter: brightness(0.7);
+        border-radius: 0.15em;
+        width: 8rem !important;
+    }
+    
+    .btn-primary:hover, body .btn-default:hover, body.sitecolor-dark .btn-default:hover {
+        background-color: var(--theme-color);
+        border-color: var(--theme-color);
+    }
+
+
+    #page-login-index .btn {
+        margin-top: 1rem;
+        font-size: 1.2rem !important;
+    }
+    
+    
+    .btn-primary:not(:disabled):not(.disabled):active, body .btn-default:not(:disabled):not(.disabled):active, body.sitecolor-dark .btn-default:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, body .active.btn-default:not(.disabled):not(:disabled), body.sitecolor-dark .active.btn-default:not(.disabled):not(:disabled), .show > .btn-primary.dropdown-toggle, body .show > .dropdown-toggle.btn-default, body.sitecolor-dark .show > .dropdown-toggle.btn-default {
+        filter: brightness(0.5);
+        background-color: var(--theme-color);
+        border-color: var(--theme-color);
+    }
+
+    
+    /*      Dashboard       */
+
+    
+    .moremenu .nav-link.active {
+         border-bottom-color: var(--theme-color) !important;
+    }
+    
+    .usermenu .btn{
+        background: transparent !important;   
+        border-color: transparent !important;
+    }
+    
+    body.sitecolor-dark a {
+        transition: all 0.15s ease-out;
+    }
+    
+    body.sitecolor-dark a:hover, body.sitecolor-dark a:hover:focus {
+        color: inherit !important;
+        text-decoration: none;
+        filter: brightness(75%);
+    }
+    
+    .form-control:focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color);
+    }
+    
+    .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within, body.sitecolor-dark .pagination .page-item.active .page-link {
+        background-color: var(--theme-color) !important;
+    }
+    
+    .aalink.focus, a.focus.autolink, .aalink:focus, a.autolink:focus, #page-footer a:not([class]).focus, #page-footer a:not([class]):focus, .arrow_link.focus, .arrow_link:focus, a:not([class]).focus, a:not([class]):focus, .activityinstance > a.focus, .activityinstance > a:focus {
+        outline: .2rem solid transparent;
+        color: inherit;
+        background-color: transparent;
+        box-shadow: 0 -.15rem transparent,0 .15rem var(--theme-color);
+    }
+    
+    
+    .aabtn.focus, .aabtn:focus, .btn-link.focus, .btn-link:focus, .nav-link.focus, .nav-link:focus, .editor_atto_toolbar button.focus, .editor_atto_toolbar button:focus, .editor_atto_toolbar .atto_toolbar_row.focus, .editor_atto_toolbar .atto_toolbar_row:focus, [role="button"].focus, [role="button"]:focus, .list-group-item-action.focus, .list-group-item-action:focus, input[type="checkbox"].focus, input[type="checkbox"]:focus, input[type="radio"].focus, input[type="radio"]:focus, input[type="file"].focus, input[type="file"]:focus, input[type="image"].focus, input[type="image"]:focus, .sr-only-focusable.focus, .sr-only-focusable:focus, a.dropdown-toggle.focus, a.dropdown-toggle:focus, .modal-dialog[tabindex="0"].focus, .modal-dialog[tabindex="0"]:focus, .moodle-dialogue-base .closebutton.focus, .moodle-dialogue-base .closebutton:focus, button.close.focus, button.close:focus, .form-autocomplete-selection.focus, .form-autocomplete-selection:focus, [role="treeitem"]:not([aria-expanded="true"]).focus, [role="treeitem"]:not([aria-expanded="true"]):focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+        outline: none !important;
+    }
+    
+    body.sitecolor-dark #wikamp-full-screen-menu a.focus, body.sitecolor-dark #wikamp-full-screen-menu a:focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+        background-color: transparent;
+        border-radius: 0.2em;
+    }
+    
+
+    
+    .page-link:focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color);
+    }
+    
+    body.sitecolor-dark a, body.sitecolor-dark .btn-link, body.sitecolor-dark .wikamp-header.fixed-top .wikamp-header-options-wrapper {
+        color: rgba(210,210,210) !important;
+    }
+    
+
+    body.sitecolor-dark .drawer-toggles .btn, body.sitecolor-dark .drawer.show .drawerheader .btn.drawertoggle, body.sitecolor-dark .drawer .message-app .drawerheader .btn.drawertoggle, .drawer-toggles .drawer-toggler .btn {
+        color: #ccc !important;
+        background-color: #3a3a3a;
+    }
+    
+    
+    .dashboard-card-deck .dashboard-card .dashboard-card-img {
+        height: 0;
+    }
+
+    .dashboard-card {
+        box-shadow: rgba(255, 255, 255, 0.1) 1.75px 1.75px 1px;
+        font-size: 120%;
+        font-weight: bold;
+        padding-top: 0.6em;
+        padding-bottom: 0.3em;
+        margin: 0.7em;
+        transition: all .09s;
+    }
+    
+    body.sitecolor-dark .dashboard-card-deck .dashboard-card, body.sitecolor-dark.pagelayout-mydashboard #region-main .dashboard-card-footer.bg-white, body.sitecolor-dark.pagelayout-mycourses #region-main .dashboard-card-footer.bg-white {
+        background-color: #232323 !important;
+    }
+
+    .dashboard-card .card-body {
+        padding: 0.6em !important;
+        padding-right: 0em !important;
+    }
+    
+    .dashboard-card:hover {
+        box-shadow: rgba(255, 255, 255, 0.1) 1.75px 1.75px 1px;
+        filter: brightness(1.2);
+    }
+
+    .dashboard-marketing-blocks .marketing-block .card {
+        height: 55px;
+        filter: brightness(0.4);
+    }
+
+    
+    .btn:focus, .btn.focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+    }
+
+
+/*     #page {
+        width: 95% !important;
+    } */
+
+    #region-main {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+    }
+
+    #page-content {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body #nav-drawer, body #page-wrapper .drawer {
+        background-color: var(--secondary-background) !important;
+    }
+
+    #nav-drawer a {
+        color: rgba(240,240,240,.75);
+    }
+    
+    
+    body.sitecolor-dark #nav-drawer .list-group-item, body #nav-drawer .list-group-item {
+        background-color: #1f1f1f;
+        border-radius: 0.2em !important;
+        color: #ccc;
+    }   
+
+    
+    body #nav-drawer .list-group-item:hover {
+        background-color: #1f1f1f;
+        border-radius: 0.2em !important;
+        color: #ccc;
+        filter: brightness(1.25);
+    }   
+    
+    
+    .custom-select {
+        background-color: var(--highlight);
+        color: #ccc;
+    }
+    
+    .form-control {
+        background-color: var(--highlight);
+        color: #ccc;
+    }
+    
+    .form-control:focus {
+        background-color: var(--highlight);
+        color: #ccc;
+        filter: brightness(1.1);
+    }
+    
+    
+    /*      Logged-in content       */
+
+    
+
+    body.sitecolor-dark input {
+        accent-color: var(--theme-color) !important;
+    }
+    
+    body.sitecolor-dark .wikamp-header.fixed-top .editmode-switch-form .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: var(--theme-color) !important;
+    }
+    
+    .custom-control-input:checked ~ .custom-control-label::before {
+        color: #ddd !important;
+        border-color: var(--theme-color) !important;
+    }
+    
+    .custom-switch .custom-control-input:checked ~ .custom-control-label::after { 
+        background-color: #ddd !important;
+    }
+    
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+        border-color: var(--theme-color);
+    }
+    
+    .custom-control-input:focus~.custom-control-label::before {
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+    }
+    
+    body.sitecolor-dark .btn-secondary {
+        background-color: #3a3a3a;
+        border-color: #3a3a3a;
+        color: #ddd;
+    }
+    
+    .course-section-header h3{
+        font-size: 1.3rem !important;
+    }
+
+    body.sitecolor-dark .activity-item:not(.activityinline) {
+        border-color: #1a1a1a !important;
+    }
+    
+    .activity-item:not(.activityinline){
+        padding: 0.8em !important;  
+    }
+    
+    .activityiconcontainer {
+        filter: brightness(50%) !important;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    
+    .activity-item  .activityicon {
+        filter: brightness(50%) !important;
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+    .activity-item  .instancename {
+        font-size: 1.1rem !important;
+    }
+
+    body.sitecolor-dark .description .course-description-item {
+        background-color: var(--secondary-background);
+    }
+    
+
+    .maincalendar .calendarmonth td.today .day-number-circle {
+        background-color: var(--theme-color) !important;
+    }
+
+    
+    .badge-secondary {
+        background-color: #ccc;
+    }
+    
+    .form-autocomplete-selection [data-active-selection="true"], .custom-select:focus {
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+    }
+ 
+    
+    body.sitecolor-dark #wikamp-full-screen-menu a.focus .media, body.sitecolor-dark #wikamp-full-screen-menu a:focus .media {
+        background-color: var(--theme-color) !important;
+        border-color: var(--theme-color) !important;
+        box-shadow: 0 0 2px .1rem var(--theme-color) !important;
+    }
+    
+    .btn-primary:focus, body .btn-default:focus, body.sitecolor-dark .btn-default:focus, .btn-primary.focus, body .focus.btn-default, body.sitecolor-dark .focus.btn-default {
+        background-color: var(--theme-color) !important;
+        border-color: var(--theme-color) !important;
+    }
+    
+    .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+        color: #999;
+        background-color: #3a3a3a !important;
+        border-color: #3a3a3a !important;
+        filter: brightness(0.8);
+    }
+    
+    
+    .user-report-container {
+        background-color: var(--secondary-background) !important;
+        border-radius: 8px;
+    }
+    
+    .path-grade-report-user .user-report-container, .grade-report-user .user-report-container {
+        background-color: var(--secondary-background) !important;
+    }
+    
+    .path-grade-report-user .user-grade thead th, .grade-report-user .user-grade thead th, .path-grade-report-user .user-grade tbody tr, .grade-report-user .user-grade tbody tr, .path-grade-report-user .user-grade td, .grade-report-user .user-grade td {
+        background-color: var(--secondary-background) !important;
+    }
+    
+    body.sitecolor-dark table td, body.sitecolor-dark table th {
+        color: #ccc !important;
+    }
+
+    
+    .path-grade-report-user .user-grade td.category, .grade-report-user .user-grade td.category {
+        border: 1px solid #ccc;
+    }
+    
+    body.sitecolor-dark .tertiary-navigation .tertiary-navigation-selector .dropdown-toggle {
+         color: #ccc !important;
+    }
+    
+    .tertiary-navigation .tertiary-navigation-selector .dropdown-toggle {
+        font-size: 1.3rem !important;
+        padding: 0.3rem 0.6rem 0.3rem 0.6em !important;
+    }
+    
+    .btn-secondary:focus, .btn-secondary.focus {
+        outline: none;
+    }
+    
+    .courseindex .courseindex-item.pageitem {
+        background-color: var(--theme-color);
+        filter: brightness(0.85);
+    }
+    
+    .courseindex .courseindex-item.pageitem:hover,  .courseindex .courseindex-item.pageitem:hover .courseindex-link, .courseindex .courseindex-item.pageitem:hover .courseindex-chevron, .courseindex .courseindex-item.pageitem:focus .courseindex-link, .courseindex .courseindex-item.pageitem:focus .courseindex-chevronm, .courseindex .courseindex-item.pageitem:focus {
+        background-color: var(--theme-color);
+        filter: brightness(1);
+    }
+
+    .file-picker .ygtvfocus, .filemanager .ygtvfocus {
+        background-color: var(--primary-bckground);
+    }
+
+    .badge-primary {
+        color: #ccc;
+        background-color: var(--theme-color);
+    }
+    
+    .course-content .current::before {
+        border-left: var(--theme-color) 3px solid;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-moz-document domain("cas.p.lodz.pl") {
+
+    :root {
+        --primary-background: #121212;
+        --secondary-background: #1a1a1a;
+        --highlight: #373737;
+        --hover-highlight: #474747;
+        --theme-color: #770909;
+    }
+
+
+    #content, .cas-header, body, html, .site-footer {
+        background: none;
+        background-color: var(--primary-background) !important;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column
+
+    }
+
+    .cas-header {
+        margin: 0;
+        background-color: var(--secondary-background) !important;
+    }
+
+    .cas-title div {
+        color: #bababa !important;
+    }
+
+    #cas form {
+        background: none;
+        background-color: var(--secondary-background) !important;
+        margin-bottom: 12vh;
+    }
+
+    .banner-wrap {
+        font-size: 1.3rem;
+        color: #bababa;
+        background-color: var(--theme-color);
+        width: 100vw;
+        margin-bottom: 12vh;
+        border: none;
+    }
+
+    .cas-name {
+        padding: 0.5em;
+    }
+
+    #login, .fl-controls-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .log-button{
+        width: 100%;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.4em !important;
+        margin-bottom: 1em !important;
+    }
+    
+    .log-button input {
+        font-size: 0.85rem;
+        padding: 0.9em 2em 0.9em 2em;
+        letter-spacing: 0.08em !important;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+        border-radius: 0.15em;
+        background-color: var(--theme-color);
+        transition: all 0.2s ease-out;
+        color: #bababa;
+    }
+    
+    .log-button :hover {
+        background-color: var(--theme-color) !important;
+        filter: brightness(130%);
+    }
+    
+    .log-button :active {
+        background-color: var(--theme-color) !important;
+        filter: brightness(0.5);
+    }
+
+    .required {
+        background-color: var(--highlight);
+        border-radius: 0.2em !important;
+        font-size: 1.05rem;
+        color: #bababa;
+    }
+
+    .required:hover {
+        background-color: var(--hover-highlight);
+    }
+
+    .fl-note, .btn-row {
+        display: none !important;
+    }
+
+
+}
