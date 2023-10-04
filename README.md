@@ -11,7 +11,7 @@
 1. Pobrać wtyczkę Stylus dla twojej przeglądarki.
   * Firefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
   * Chrome: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
-2. Pobrać styl https://userstyles.world/style/12166/dark-wikamp-patch.
+2. Pobrać styl (guzik install) https://userstyles.world/style/12166/dark-wikamp-patch.
 3. Zainstalować styl i gotowe.
 
 
