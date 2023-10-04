@@ -19,6 +19,7 @@
 
 ![screen1](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen1.png)
 ![screen2](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen2.png)
+![screen3](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen3.png)
 
 
 ## Zmiana koloru głównego
