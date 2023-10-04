@@ -22,4 +22,4 @@
 
 
 ## Zmiana koloru głównego
-Jeżeli nie lubisz czerwonego, możesz bez problemu zmienić kolor główny. W panelu zarządzania Stylus w kodzie źródłowyym motywu jest zmienna ::root{ --theme-color: #kolor }. Możesz tam wpisać dowolny kolor w kodzie heksadecymalnym.
+Jeżeli nie lubisz czerwonego, możesz bez problemu zmienić kolor główny. W panelu zarządzania Stylus w kodzie źródłowym motywu jest zmienna ::root{ --theme-color: #kolor }. Możesz tam wpisać dowolny kolor w kodzie heksadecymalnym.
