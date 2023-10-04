@@ -19,3 +19,7 @@
 
 ![screen1](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen1.png)
 ![screen2](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen2.png)
+
+
+## Zmiana koloru głównego
+Jeżeli nie lubisz czerwonego, możesz bez problemu zmienić kolor główny. W panelu zarządzania Stylus w kodzie źródłowyym motywu jest zmienna ::root{ --theme-color: #kolor }. Możesz tam wpisać dowolny kolor w kodzie heksadecymalnym.
