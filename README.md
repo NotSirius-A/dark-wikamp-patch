@@ -13,3 +13,9 @@
   * Chrome: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
 2. Pobrać styl https://userstyles.world/style/12166/dark-wikamp-patch.
 3. Zainstalować styl i gotowe.
+
+
+## Wygląd
+
+![screen1](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen1.png)
+![screen2](https://raw.githubusercontent.com/NotSirius-A/dark-wikamp-patch/main/ss/screen2.png)
